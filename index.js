@@ -25,6 +25,17 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++){
         buttonAnimation(buttonInnerHTML);
         
     });
+    
+    
+    document.querySelectorAll(".drum")[i].addEventListener("touchstart", function (){
+        
+        var buttonInnerHTML = this.innerHTML;
+
+        makeSound(buttonInnerHTML);
+
+        buttonAnimation(buttonInnerHTML);
+        
+    });
 }
 
 //Detecting Keyboard Press
